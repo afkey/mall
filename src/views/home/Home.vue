@@ -5,46 +5,28 @@
     </nav-bar>
     <home-swiper :banners="banners"></home-swiper>
     <recommend-view :recommends="recommends"></recommend-view>
-    <feature-view/>
+    <feature-view></feature-view>
+    <top-control :titles="['首页','购物车','我的']"></top-control>
     <ul>
-      <li>1111111</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
+      <li>12</li>
+      <li>12</li>
+      <li>12</li>
+      <li>12</li>
+      <li>12</li>
+      <li>12</li>
+      <li>12</li>
+      <li>12</li>
     </ul>
   </div>
 </template>
 
 <script>
-import NavBar from "components/common/navbar/NavBar";
-import { getHomeMultidata } from "../../network/home.js";
-import HomeSwiper from "./childComponent/HomeSwiper";
-import RecommendView from './childComponent/HomeRecommendView';
-import FeatureView from './childComponent/FeatureView';
-
+import NavBar from "../../components/common/navbar/NavBar"
+import { getHomeMultidata } from "../../network/home.js"
+import HomeSwiper from "./childComponent/HomeSwiper"
+import RecommendView from './childComponent/HomeRecommendView'
+import TopControl from './childComponent/TopControl'
+import FeatureView from './childComponent/FeatureView'
 
 export default {
   name: "Home",
@@ -59,6 +41,7 @@ export default {
     NavBar,
     HomeSwiper,
     RecommendView,
+    TopControl,
     FeatureView,
   },
   method: {},
